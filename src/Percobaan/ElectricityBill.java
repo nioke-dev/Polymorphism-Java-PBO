@@ -1,4 +1,4 @@
-package Percobaan1;
+package Percobaan;
 
 public class ElectricityBill implements Payable {
     private int kwh;

@@ -1,4 +1,4 @@
-package Percobaan1;
+package Percobaan;
 
 public class InternshipEmployee extends Employee {
     private int length;
