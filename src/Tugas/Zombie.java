@@ -1,6 +1,6 @@
 package Tugas;
 
-public class Zombie {
+public class Zombie implements Destroyable {
     protected int health;
     protected int level;
 

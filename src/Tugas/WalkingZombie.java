@@ -1,6 +1,6 @@
 package Tugas;
 
-public class WalkingZombie extends Zombie implements Destroyable {
+public class WalkingZombie extends Zombie {
     public WalkingZombie(int health, int level) {
         super(health, level);
     }
@@ -10,11 +10,11 @@ public class WalkingZombie extends Zombie implements Destroyable {
         // Implementasi penyembuhan WalkingZombie sesuai dengan level
         double increment;
         if (level == 1) {
-            increment = 2;
+            increment = 0.2;
         } else if (level == 2) {
-            increment = 3;
+            increment = 0.3;
         } else {
-            increment = 4;
+            increment = 0.4;
         }
         health += (int) (health * increment);
     }

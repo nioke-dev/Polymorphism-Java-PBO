@@ -1,6 +1,6 @@
 package Tugas;
 
-class JumpingZombie extends Zombie implements Destroyable {
+class JumpingZombie extends Zombie {
     public JumpingZombie(int health, int level) {
         super(health, level);
     }
@@ -22,7 +22,7 @@ class JumpingZombie extends Zombie implements Destroyable {
     @Override
     public void destroyed() {
         // Implementasi penghancuran JumpingZombie
-        health -= (health * 0.1);        
+        health -= (int) (health * 0.1);        
     }
 
     @Override
